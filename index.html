@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>随机答题</title>
+  <style>body{margin:0;padding:50px;text-align:center;font-size:16px;}</style>
+</head>
+<body>
+  正在随机抽题，请稍候...
+  <script>
+    // 替换成你的30个企微收集表填写页链接，格式："链接1","链接2",..."链接30"
+    const urls = [
+      "https://doc.weixin.qq.com/forms/ACsA5wcMAGsAZIAbQZzAHUCNsfM1Im8af?page=1",
+      "https://doc.weixin.qq.com/forms/ACsA5wcMAGsAZIAbQZzAHUCNT36eqJODf?page=1"
+      // 继续添加到30个链接
+    ];
+    // 随机跳转核心代码，无需修改
+    const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+    window.location.href = randomUrl;
+  </script>
+</body>
+</html>
